@@ -1,0 +1,258 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+     background: #000;
+     color: #fcfcfc;
+ }
+
+ /* Navbar container */
+ header {
+    
+     width: 100%;
+     border-bottom: 1px solid #ddd;
+ }
+
+ .navbar {
+     background: white;
+ }
+
+ /* Top Bar */
+ .top-bar {
+     background: #e7e3e3;
+     display: flex;
+     justify-content: flex-end;
+     padding: 5px 20px;
+     font-size: 0.85rem;
+ }
+
+ .top-bar a {
+     color: #0c0c0c;
+     text-decoration: none;
+     margin-left: 15px;
+ }
+
+ /* Main Navbar */
+ .navbar {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px 30px;
+ }
+ 
+ /* Left Icons */
+ .left-icons img {
+     display: flex;
+     width: 25px;
+     cursor: pointer;
+     border: 2px solid blue;
+ }
+
+ /* Logo */
+ .logo img {
+     width: 60px;
+     cursor: pointer;
+ }
+
+ /* Center Menu */
+ .nav-links {
+     display: flex;
+     gap: 25px;
+ }
+
+ .nav-links a {
+     color: #0d0c0c;
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 0.95rem;
+ }
+
+ .nav-links a:hover {
+     opacity: 0.6;
+ }
+
+ /* Right Section */
+ .right-section {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .search-box {
+     display: flex;
+     align-items: center;
+     background: #fefcfc;
+     border-radius: 30px;
+     padding: 5px 12px;
+ }
+
+ .search-box input {
+     border: none;
+     outline: none;
+     background: transparent;
+     padding: 5px;
+     font-size: 0.9rem;
+     color: #000;
+ }
+
+ .search-box svg {
+     width: 16px;
+     height: 16px;
+     opacity: 0.6;
+     color: #000;
+ }
+
+ .icon {
+     color: #000;
+     width: 20px;
+     height: 20px;
+     cursor: pointer;
+ }
+
+ /* Hamburger Menu (Mobile) */
+ .hamburger {
+     display: none;
+     flex-direction: column;
+     gap: 4px;
+     cursor: pointer;
+ }
+
+ .hamburger div {
+     width: 25px;
+     height: 2px;
+     background-color: #edede1;
+ }
+
+ /* Responsive Design */
+ @media (max-width: 992px) {
+     .nav-links {
+         display: none;
+         position: absolute;
+         top: 65px;
+         left: 0;
+         width: 100%;
+         background: white;
+         flex-direction: column;
+         align-items: center;
+         gap: 20px;
+         padding: 20px 0;
+         border-top: 1px solid #ddd;
+     }
+
+     .nav-links.active {
+         display: flex;
+     }
+
+     .hamburger {
+         display: flex;
+     }
+ }
+
+ .banner-container {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     height: 100vh;
+ }
+
+ .banner {
+     position: relative;
+     flex: 1;
+     min-width: 300px;
+     height: 100vh;
+     overflow: hidden;
+ }
+
+ .banner img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: 0.4s ease;
+ }
+
+ .banner:hover img {
+     transform: scale(1.05);
+ }
+
+ .banner-content {
+     position: absolute;
+     bottom: 40px;
+     left: 40px;
+     color: white;
+ }
+
+ .banner-content h3 {
+     font-weight: 400;
+     font-size: 1rem;
+     opacity: 0.9;
+ }
+
+ .banner-content h1 {
+     font-size: 1.5rem;
+     margin: 8px 0;
+     font-weight: 700;
+ }
+
+ .shop-btn {
+     background: white;
+     color: black;
+     padding: 8px 18px;
+     border-radius: 25px;
+     text-decoration: none;
+     font-weight: 600;
+     transition: 0.3s ease;
+     display: inline-block;
+ }
+
+ .shop-btn:hover {
+     background: #ddd;
+ }
+
+ /* Responsive Layout */
+ @media (max-width: 768px) {
+     .banner-container {
+         flex-direction: column;
+         height: auto;
+     }
+
+     .banner {
+         height: 70vh;
+     }
+
+     .banner-content {
+         bottom: 30px;
+         left: 20px;
+     }
+
+     .banner-content h1 {
+         font-size: 1.3rem;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .banner {
+         height: 60vh;
+     }
+
+     .banner-content {
+         bottom: 20px;
+         left: 15px;
+     }
+
+     .banner-content h3 {
+         font-size: 0.9rem;
+     }
+
+     .banner-content h1 {
+         font-size: 1.1rem;
+     }
+
+     .shop-btn {
+         padding: 6px 14px;
+         font-size: 0.9rem;
+     }
+ }

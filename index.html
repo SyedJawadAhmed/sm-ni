@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Nike Style Banner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="left-icons">
+                <img src="nikeLogo.png" alt="Jordan">
+                <img src="window.png" alt="Converse">
+            </div>
+            <a href="#">Find a Store</a>
+            <a href="#">Help</a>
+            <a href="#">Join Us</a>
+            <a href="#">Sign In</a>
+        </div>
+
+        <!-- Main Navbar -->
+        <nav class="navbar">
+
+                <div class="logo">
+                    <img src="nikeLogo.png" alt="Nike Logo">
+                </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Jordan</a>
+                <a href="#">NikeSKIMS</a>
+                <a href="#">Sport</a>
+                <a href="#">Sale</a>
+            </div>
+
+            <div class="right-section">
+                <div class="search-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                    <input type="text" placeholder="Search">
+                </div>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l8.84 8.84 8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path d="M6 6h15l-1.5 9h-13z" />
+                    <circle cx="9" cy="21" r="1" />
+                    <circle cx="19" cy="21" r="1" />
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner-container">
+        <!-- Left Banner -->
+        <div class="banner">
+            <img src="nike-just-do-it (1).avif" alt="Left Banner">
+            <div class="banner-content">
+                <h3>Tatum 4 “Boston”</h3>
+                <h1>Never Be The Same</h1>
+                <a href="#" class="shop-btn">Shop</a>
+            </div>
+        </div>
+
+        <!-- Right Banner -->
+        <div class="banner">
+            <img src="nike-just-do-it.avif" alt="Right Banner">
+            <div class="banner-content">
+                <h3>Nike Yardrunners x Norfolk State University</h3>
+                <h1>Legacy in Motion</h1>
+                <a href="#" class="shop-btn">Shop</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
