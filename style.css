@@ -9,14 +9,22 @@
      background: #000;
      color: #fcfcfc;
  }
+ /* .left-icons img {
+     display: flex;
+     width: 25px;
+     cursor: pointer;
+     border: 2px solid blue;
+ } */
 
  /* Navbar container */
  header {
-    
      width: 100%;
      border-bottom: 1px solid #ddd;
  }
-
+.left-icons img{
+    align-items: flex-start;
+    width:25px ;
+}
  .navbar {
      background: white;
  }
@@ -45,12 +53,6 @@
  }
  
  /* Left Icons */
- .left-icons img {
-     display: flex;
-     width: 25px;
-     cursor: pointer;
-     border: 2px solid blue;
- }
 
  /* Logo */
  .logo img {
