@@ -9,6 +9,7 @@
      background: #000;
      color: #fcfcfc;
  }
+
  /* .left-icons img {
      display: flex;
      width: 25px;
@@ -21,11 +22,19 @@
      width: 100%;
      border-bottom: 1px solid #ddd;
  }
-.left-icons img{
+
+ .left{
+    display: flex;
     align-items: flex-start;
-    width:25px ;
-}
- .navbar {
+    justify-content: flex-start;
+    gap: 50px;
+ }
+ .left-icons img {
+     align-items: flex-start;
+     width: 25px;
+    }
+    
+    .navbar {
      background: white;
  }
 
@@ -51,7 +60,7 @@
      justify-content: space-between;
      padding: 10px 30px;
  }
- 
+
  /* Left Icons */
 
  /* Logo */
